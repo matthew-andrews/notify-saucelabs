@@ -15,10 +15,10 @@ var notifiySaucelabs = require('notify-saucelabs');
 module.exports = {
 
 	// tests go here
-	
+
 	tearDown: function(callback) {
 		notifySaucelabs({
-			accessKey: this.client.sessionId,
+			sessionId: this.client.sessionId,
 			passed: this.results.failed === 0
 		})
 		.then(callback);
