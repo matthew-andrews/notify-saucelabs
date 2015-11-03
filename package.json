@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "main": "main.js",
   "license": "MIT",
-  "homepage": "https://github.com/matthew-andrews/notify-saucelabs"
+  "homepage": "https://github.com/matthew-andrews/notify-saucelabs",
   "devDependencies": {
     "npm-prepublish": "^1.2.0"
   }
