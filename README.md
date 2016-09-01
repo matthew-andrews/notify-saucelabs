@@ -19,7 +19,8 @@ module.exports = {
 	tearDown: function(callback) {
 		notifySaucelabs({
 			sessionId: this.client.sessionId,
-			passed: this.results.failed === 0
+			passed: this.results.failed === 0,
+			tags: ['a-tag', 'another-tag']
 		})
 		.then(callback);
 	}
